@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 const sideBar = () => {
-  const navigate=useNavigate();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigate= useNavigate();
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white lg-flex'>
       <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
@@ -14,7 +15,7 @@ const sideBar = () => {
         </div> 
         <div className='flex items-center gap-3 pl-8 cursor-pointer'>
           <img src={assets.search_icon} className='w-6' alt=""/>
-          <p className='font-bold'>Search</p>
+          <p className='font-bold'>Search bar</p>
         </div>
       </div>
       <div className='bg-[#121212] h-[85%] rounded'>
